@@ -13,10 +13,10 @@ pipeline {
   }
 
   stages {
-    
+
     stage('install') {
       steps {
-        git branch: 'develop', url: 'https://github.com/PanchoLab/Taller_Jenkins.git'
+        git branch: 'develop', url: 'https://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@github.com/PanchoLab/Taller_Jenkins.git'
         dir('frontend') {
           sh 'npm install'
         }
